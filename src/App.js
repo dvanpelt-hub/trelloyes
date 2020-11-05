@@ -1,6 +1,7 @@
 import React, { Component } from 'react';//Why is { Component } needed?
 import List from './List'
 import './App.css';
+import STORE from './store';
 
 //Questions throughout//
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
         <div className='App-list'>
           {store.lists.map(list => (
             <List
+            //Custom props?//
               key={list.id}
               header={list.header}
               cards={list.cardIds.map(id => store.allCards[id])}

@@ -11,6 +11,7 @@ export default function List(props) {
       </header>
       <div className='List-cards'>
         {props.cards.map((card) =>
+        //Is cards a custom prop?
         //Is this this Card component being rendered? Where is the array generated?
         <Card
           key={card.id}
